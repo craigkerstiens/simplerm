@@ -112,6 +112,16 @@ ROOT_URLCONF = 'app.urls'
 
 TEMPLATE_DIRS = ( os.path.join(SITE_ROOT, 'templates'),)
 
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.google.GoogleOAuthBackend',
+    'social_auth.backends.google.GoogleOAuth2Backend',
+    'social_auth.backends.google.GoogleBackend',
+    'social_auth.backends.twitter.TwitterBackend',
+    'social_auth.backends.facebook.FacebookBackend',
+    'social_auth.backends.contrib.linkedin.LinkedinBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -122,7 +132,32 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'gunicorn',
+    'djcelery',
+    'django_extensions',
+    'social_auth',
+    'rm',
 )
+
+LOGIN_URL          = '/login-form/'
+LOGIN_ERROR_URL    = '/login-error/'
+
+TWITTER_CONSUMER_KEY = os.environ.get('TWITTER_CONSUMER_KEY')
+TWITTER_CONSUMER_SECRET = os.environ.get('TWITTER_CONSUMER_SECRET')
+
+FACEBOOK_APP_ID = os.environ.get('FACEBOOK_APP_ID','224439660948300')
+FACEBOOK_API_SECRET = os.environ.get('FACEBOOK_API_SECRET','abab10774f98c68a6000e9a9631d9baa')
+FACEBOOK_EXTENDED_PERMISSIONS = ['publish_actions','user_likes','user_photos','user_photo_video_tags', 'read_mailbox','offline_access']
+
+LINKEDIN_CONSUMER_KEY = os.environ.get('LINKEDIN_CONSUMER_KEY')
+LINKEDIN_CONSUMER_SECRET = os.environ.get('LINKEDIN_CONSUMER_SECRET')
+
+#GOOGLE_OAUTH2_CLIENT_ID = os.environ.get('GOOGLE_OAUTH2_CLIENT_ID','1027849145619@developer.gserviceaccount.com')
+#GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get('GOOGLE_OAUTH2_CLIENT_SECRET','3WgQpYUSLZVtZmKawG40oFg1')
+GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds']
+GOOGLE_DISPLAY_NAME = 'Blah Blah'
+
+CELERY_ALWAYS_EAGER = True
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

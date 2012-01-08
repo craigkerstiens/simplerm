@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta name="google-site-verification" content="McJcfgBZ7cp5xKmIXQgA_d9qQrvbB5lvVhe047r1nd4" />
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/foundation.css" type="text/css" />
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/app.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+	<link rel="stylesheet/css" href="{{MEDIA_URL}}css/foundation" type="text/css" />
+	<script src="{{MEDIA_URL}}js/foundation.js"></script>
+	<script src="{{MEDIA_URL}}js/app.js"></script>
+	<style>
+		.content {
+			padding-top: 60px;
+		}
+	</style>
+</head>
+<body>
+	<div id="zurBar" class="container">
+	    <div class="row">
+	      <div class="four columns">
+	        <h1><a href="../">Simple RM</a></h1>
+	      </div>
+	      <div class="eight columns hide-on-phones">
+	      	<strong class="right">
+				{% if user.is_authenticated %}
+	      		<a href="/logout/">Logout</a>
+				{% else %}
+	      		<a href="#" id="login" data-reveal-id="myModal">Login</a>
+				{% endif %}
+
+	      	</strong>
+	      </div>
+	    </div>
+	  </div>
+	
+	<div class="content">
+	{% block body %}
+	{% endblock %}
+	</div>
+  </div>  
+	{% if user.is_authenticated %}
+	{% else %}
+	<div id="myModal" class="reveal-modal">
+	     <h2>Login.</h2>
+	     <p>
+				<a href="/login/twitter/">Twitter</a> | 
+				<a href="/login/facebook/">Facebook</a> | 
+				<a href="/login/linkedin/">LinkedIn</a> |
+				<a href="/google/login/">Google</a>		
+		</p>
+	     <a class="close-reveal-modal">&#215;</a>
+	</div>
+	<script type="text/javascript">
+	     $(document).ready(function() {
+	          $('#login').click(function() {
+	               $('#myModal').reveal(
+				     animation: 'fadeAndPop', //fade, fadeAndPop, none
+				     animationspeed: 300, //how fast animtions are
+				     closeOnBackgroundClick: true, //if you click background will modal close?
+				     dismissModalClass: 'close-reveal-modal' //the class of a button or element that will close an open modal);
+	     });
+	});
+	</script>
+	{% endif %}
+
+</body>
+</html>

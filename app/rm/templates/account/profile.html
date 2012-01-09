@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="eight columns">
+      <h3>Accounts</h3>
+      <hr/>
+      {% for account in accounts %}
+	  <div class="row">
+        {{account.provider}} 
+		{% if account.active %}
+			<a href="/disconnect	/{{account.provider}}">Remove</a>
+		{% else %}
+			<a href="/associate/{{account.provider}}">Add</a>
+		{% endif %}
+	  </div>
+      {% endfor %}
+    </div>
+    <div class="four columns">
+      <div class="panel">
+		<h4>Notification Preferences</h4>
+		<hr/>
+		<p>
+		<input type="checkbox" /> Email
+		<br/>
+		<input type="checkbox" /> Phone
+		</p>
+	  </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

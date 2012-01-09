@@ -158,7 +158,7 @@ GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get('GOOGLE_OAUTH2_CLIENT_SECRET')
 GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds','https://www.googleapis.com/userinfo/email']
 
 CELERY_ALWAYS_EAGER = True
-
+SOCIAL_AUTH_ASSOCIATE_BY_MAIL = True
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

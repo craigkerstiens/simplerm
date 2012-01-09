@@ -113,7 +113,7 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATE_DIRS = ( os.path.join(SITE_ROOT, 'templates'),)
 
 AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.google.GoogleOAuthBackend',
+    #'social_auth.backends.google.GoogleOAuthBackend',
     'social_auth.backends.google.GoogleOAuth2Backend',
     'social_auth.backends.google.GoogleBackend',
     'social_auth.backends.twitter.TwitterBackend',
@@ -151,10 +151,11 @@ FACEBOOK_EXTENDED_PERMISSIONS = ['publish_actions','user_likes','user_photos','u
 LINKEDIN_CONSUMER_KEY = os.environ.get('LINKEDIN_CONSUMER_KEY')
 LINKEDIN_CONSUMER_SECRET = os.environ.get('LINKEDIN_CONSUMER_SECRET')
 
-#GOOGLE_OAUTH2_CLIENT_ID = os.environ.get('GOOGLE_OAUTH2_CLIENT_ID','1027849145619@developer.gserviceaccount.com')
-#GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get('GOOGLE_OAUTH2_CLIENT_SECRET','3WgQpYUSLZVtZmKawG40oFg1')
-GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds']
-GOOGLE_DISPLAY_NAME = 'Blah Blah'
+#GOOGLE_DISPLAY_NAME = 'Craig'
+
+GOOGLE_OAUTH2_CLIENT_ID = os.environ.get('GOOGLE_OAUTH2_CLIENT_ID')
+GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get('GOOGLE_OAUTH2_CLIENT_SECRET')
+GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds','https://www.googleapis.com/userinfo/email']
 
 CELERY_ALWAYS_EAGER = True
 

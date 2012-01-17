@@ -1,18 +1,20 @@
 {% extends "base.html" %}
 {% block body %}
-<div class="container">
   <div class="row">
     <div class="eight columns">
       <h3>Accounts</h3>
       <hr/>
       {% for account in accounts %}
-	  <div class="row">
+	  <div class="row" style="margin-botton: 2px;padding-top:0px"><p>
+		<div class="four columns">
         {{account.provider}} 
+		</div>
 		{% if account.active %}
-			<a href="/disconnect	/{{account.provider}}">Remove</a>
+			<a href="/disconnect/{{account.provider}}" class="button red nice" style="width:80px;">Remove</a>
 		{% else %}
-			<a href="/associate/{{account.provider}}">Add</a>
+			<a href="/associate/{{account.provider}}" class="button nice" style="width:80px;">Add</a>
 		{% endif %}
+		<hr/>
 	  </div>
       {% endfor %}
     </div>
@@ -28,5 +30,4 @@
 	  </div>
     </div>
   </div>
-</div>
 {% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load uni_form_tags %}
+{{ form|as_uni_form }}
+
+{% block body %}
+
+
+<div class="container">
+
+<div class="row">
+<div class = "eight columns offset-by-one">
+<p>SimplyRM is an organizational tool that empowers you to keep track of your relationships like never before.</p>
+<p>We're still in private alpha, but if you enter your name and email, we'll keep you updated on our progress and let you know when to sign-up for your free account.</p>
+</div>
+</div>
+<div class = "row">
+<div class = "eight columns offset-by-one">
+<div class ="panel">
+<!-- <form action="{% url privatebeta_invite %}" method="post" class = "nice"> /-->
+{% uni_form form form.helper %}
+</div>
+</div>
+{% csrf_token %}
+</div>
+</div>
+{% endblock %}

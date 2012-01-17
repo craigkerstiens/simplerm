@@ -1,3 +1,4 @@
 venv
 *.pyc
 dev.db
+.env

@@ -54,3 +54,19 @@ class Relationship(models.Model):
 
 	def __unicode__(self):
 		return self.relationship_type
+		
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+    phone_no = models.CharField(max_length=50)
+    email = models.BooleanField(default=False)
+    phone = models.BooleanField(default=False)
+    
+		
+from social_auth.signals import pre_update
+from social_auth.backends.google import GoogleBackend
+
+def google_extra_values(sender, user, response, details, **kwargs):
+    print sender
+    return True
+
+pre_update.connect(google_extra_values, sender=GoogleBackend)

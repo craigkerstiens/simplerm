@@ -1,3 +1,4 @@
+{% load gargoyle_tags %}
 <html>
 <head>
 	<meta name="google-site-verification" content="McJcfgBZ7cp5xKmIXQgA_d9qQrvbB5lvVhe047r1nd4" />
@@ -27,11 +28,13 @@
 	      </div>
 	      <div class="eight columns hide-on-phones">
 	      	<strong class="right">
+				{% ifswitch signup_active %}
 				{% if user.is_authenticated %}
 	      		<a href="/logout/">Logout</a>
 				{% else %}
 	      		<a href="#" id="login" data-reveal-id="myModal">Login</a>
 				{% endif %}
+				{% endifswitch %}
 
 	      	</strong>
 	      </div>
@@ -41,6 +44,7 @@
   <div class="container">
 	{% block body %}
 	{% endblock %}
+	
 	{% if user.is_authenticated %}
 	{% else %}
 	<div id="myModal" class="reveal-modal">

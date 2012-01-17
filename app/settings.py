@@ -136,6 +136,8 @@ INSTALLED_APPS = (
     'django_extensions',
     'social_auth',
     'rm',
+    'privatebeta',
+    'uni_form',
 )
 
 LOGIN_URL          = '/login-form/'

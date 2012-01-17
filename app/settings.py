@@ -160,6 +160,8 @@ GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds','https://www.googl
 CELERY_ALWAYS_EAGER = True
 SOCIAL_AUTH_ASSOCIATE_BY_MAIL = True
 
+AUTH_PROFILE_MODULE = 'rm.UserProfile'
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error.

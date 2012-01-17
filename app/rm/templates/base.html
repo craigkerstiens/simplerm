@@ -3,6 +3,7 @@
 	<meta name="google-site-verification" content="McJcfgBZ7cp5xKmIXQgA_d9qQrvbB5lvVhe047r1nd4" />
 	<link rel="stylesheet" href="{{MEDIA_URL}}css/foundation.css" type="text/css" />
 	<link rel="stylesheet" href="{{MEDIA_URL}}css/app.css" type="text/css" />
+	<link rel="stylesheet" href="{{MEDIA_URL}}css/typography.css" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 	<link rel="stylesheet/css" href="{{MEDIA_URL}}css/foundation" type="text/css" />
@@ -33,20 +34,22 @@
 	    </div>
 	  </div>
 	
-	<div class="content">
+  <div class="container">
 	{% block body %}
 	{% endblock %}
-	</div>
-  </div>  
 	{% if user.is_authenticated %}
 	{% else %}
 	<div id="myModal" class="reveal-modal">
 	     <h2>Login.</h2>
 	     <p>
-				<a href="/login/twitter/">Twitter</a> | 
-				<a href="/login/facebook/">Facebook</a> | 
-				<a href="/login/linkedin/">LinkedIn</a> |
-				<a href="/login/google/">Google</a>		
+			<div class="row" style="margin-bottom:6px;">
+				<a href="/login/twitter/" class="button nice" style="width:100px;">Twitter</a> 
+				<a href="/login/facebook/" class="button nice" style="width:100px;">Facebook</a>
+			</div>
+			<div class="row">
+				<a href="/login/linkedin/" class="button nice" style="width:100px;">LinkedIn</a>
+				<a href="/login/google/" class="button nice" style="width:100px;">Google</a>		
+			</div>
 		</p>
 	     <a class="close-reveal-modal">&#215;</a>
 	</div>
@@ -62,6 +65,6 @@
 	});
 	</script>
 	{% endif %}
-
+</div>
 </body>
 </html>

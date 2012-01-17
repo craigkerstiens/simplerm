@@ -138,6 +138,9 @@ INSTALLED_APPS = (
     'rm',
     'privatebeta',
     'uni_form',
+    'impersonate',
+    'gargoyle',
+    'nexus',
 )
 
 LOGIN_URL          = '/login-form/'

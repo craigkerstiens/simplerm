@@ -49,8 +49,8 @@ footer.row a:hover {
 
 /* ZURB bar */
 #zurBar {
-  background: #202020;
-  border-bottom: solid 4px #FF6700;
+  background: #DDDDDD;
+  border-bottom: solid 4px #FF8700;
   padding: 15px 20px 13px 20px; }
   
 @media handheld, only screen and (max-width: 767px) {

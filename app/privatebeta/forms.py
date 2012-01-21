@@ -6,7 +6,7 @@ from uni_form.layout import *
 class InviteRequestForm(forms.ModelForm):
 
 
-	class Meta:
+	class Meta:	
 		model = InviteRequest
 		fields = ['first_name', 'last_name', 'email']
 
@@ -21,10 +21,10 @@ class InviteRequestForm(forms.ModelForm):
 			Div('first_name', 'last_name', css='ctrlHolder'),
 			Div('email'),
 			ButtonHolder(
-				Submit('submit', 'Submit', css_class='small black button radius')
-				#Submit('submit', 'Submit', css_class='primaryAction')
+				Submit('submit', 'Submit', css_class='nice white button radius')
+			#	Submit('submit', 'Submit', css_class='primaryAction')
 			)
-		)
+		)	
 
 
 		return super(InviteRequestForm, self).__init__(*args, **kwargs)

@@ -26,8 +26,9 @@ class Contact(models.Model):
         return self.name
 
 class ContactAccount(models.Model):
-    contact = models.ForeignKey(Contact)
-    service = models.ForeignKey(Service)
+    user = models.ForeignKey(User, blank=True, null=True)
+    contact = models.ForeignKey(Contact, blank=True, null=True)
+    service = models.IntegerField(choices=MEDIUM_CHOICES, blank=True, null=True)
     description = models.TextField(blank=True,null=True)
     name = models.CharField(max_length=200, blank=True, null=True)
     account_id = models.CharField(max_length=200)
@@ -40,7 +41,7 @@ class ContactAccount(models.Model):
 
 class Interaction(models.Model):
     source = models.ForeignKey(ContactAccount,related_name="%(app_label)s_%(class)s_source")
-    destination = models.ManyToManyField(ContactAccount,related_name="%(app_label)s_%(class)s_destination")
+    destination = models.ManyToManyField(ContactAccount,related_name="%(app_label)s_%(class)s_dest")
     content = models.TextField(blank=True,null=True)
     created_at = models.DateTimeField(blank=True, null=True)
     message_id = models.CharField(null=True, blank=True,max_length=30)
@@ -68,5 +69,15 @@ from social_auth.backends.google import GoogleBackend
 def google_extra_values(sender, user, response, details, **kwargs):
     print sender
     return True
+    
+from social_auth.signals import pre_update
+from social_auth.backends.facebook import FacebookBackend
 
+def facebook_extra_values(sender, user, response, details, **kwargs):
+    obj, created = ContactAccount.objects.get_or_create(service=5, user=user, account_id=response.get('id'))
+    if created:
+        obj.save()
+    return True
+
+pre_update.connect(facebook_extra_values, sender=FacebookBackend)
 pre_update.connect(google_extra_values, sender=GoogleBackend)

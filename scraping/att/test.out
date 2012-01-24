@@ -1,0 +1,1539 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<!-- Commented As Per 1008 Defect WUP00341193 and Added the fallowing code
+	<title>AT&T</title> -->
+	
+    <title>AT&T</title>
+    <!-- 1008 Defect Code End -->
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache='set-cookie', no-store" />
+	<meta http-equiv="Expires" content="-1" />
+	<meta name="robots" content="all" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<META NAME="WT.cg_n" CONTENT="Online Care" />
+<META NAME="WT.cg_s" CONTENT="OLAM" />
+
+
+	<!-- Main page layout -->
+		
+	
+	
+	
+		<script type="text/javascript" src="/olam/js/prototype.js"></script>
+		<script type="text/javascript" src="//www.att.com/scripts/jquery.min.js"></script>
+		<script type="text/javascript" src="//www.att.com/scripts/global.js"></script>
+		<script type="text/javascript" src="//www.att.com/scripts/reporting.js"></script>
+		<script type="text/javascript" src="//www.att.com/scripts/gbl.js"></script>		
+	
+
+
+	
+	
+		
+		
+			<link rel="stylesheet" type="text/css" href="/olam/css/css-includes.css" media="screen, projection" />
+		
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="/olam/css/print.css" media="print" />
+	<link rel="stylesheet" type="text/css" href="//www.att.com/styles/gbl.css" type="text/css" />
+	
+
+
+
+<!-- Include Services.css file for Services Module only -->
+
+	
+	<!-- Javascript includes -->
+
+<style type="text/css">
+#gvp_mainPopUpTitle {margin:0;padding:0;text-align:left;}
+</style>
+
+<script type="text/javascript" src="//www.att.com/media/gvp/gvpUtils.js"></script>
+
+<script type="text/javascript" src="/olam/js/sessionTimeout.js"></script>
+
+
+
+  <script type="text/javascript" src="/olam/js/cssBrowserSelector.js"></script>
+  <script type="text/javascript" src="/olam/js/hideSelect.js"></script>	
+  <script type="text/javascript" src="/olam/js/Ajax.js"></script>
+  <script type="text/javascript" src="/olam/js/UserMessaging.js"></script>
+  
+  <script type="text/javascript" src="/olam/js/vidSwitcher.js"></script>
+  <script src="/olam/js/AC_RunActiveContent.js" language="javascript"></script>
+  
+  
+  
+
+
+
+	<script language="JavaScript" type="text/JavaScript">    
+	
+
+
+                var DefaultValue = 'Search';
+
+
+
+		function validateSearchHeader() {
+			
+			//remove leading and trailing spaces
+			document.frmSearchHeader.q.value = document.frmSearchHeader.q.value.replace(/^\s*/, "").replace(/\s*$/, "");
+			
+			var invalidatSearchWords=new Array("",DefaultValue,"buscar","search","ask","question","...","ask a question","ask a","a question","enter here..","enter","here..");
+			
+			for (x in invalidatSearchWords) {
+				if (document.getElementById('q').value.toLocaleLowerCase() == invalidatSearchWords[x]) {
+					 
+                        alert('Please enter at least one keyword in the Search box.');
+                     
+
+		        	document.getElementById('q').focus();
+		        	return false;				
+				}				
+			}    
+
+		    return true;
+
+		}
+
+
+    function init(){
+        if(document.getElementById('dashboard') == null){
+                if(document.getElementById('main') != null){
+                    document.getElementById('main').bgcolor="#FFB74C" ;
+                }else if(document.getElementById('landing') != null){
+                    document.getElementById('landing').bgcolor="#FFB74C" ;
+               }
+        }
+        var sessionLength = 900000 / (60*1000);
+        sessionTimeoutAlert(sessionLength);
+	}
+   
+	</script>
+	
+
+
+</head>
+
+<script src='/olam/js/ATT-Olam-english-mtagconfig.js' type="text/Javascript"></script>
+
+<body id='main' onload="javascript:init()">
+<!--[if lte IE 8]><div id="ie"><![endif]-->
+<!--[if lte IE 6]><div id="ie6"><![endif]-->
+
+			
+         	
+         	
+         	
+         	
+	        <!-- Moved the fallowing tag, from here to Head Section to enhance functionality.
+	         
+	        -->	
+             
+
+
+		<!-- GLOBAL NAV -->
+		
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+
+
+
+var DefaultValue = 'Search';
+
+
+
+function validateSearchHeader() {
+
+//remove leading and trailing spaces
+document.frmSearchHeader.q.value = document.frmSearchHeader.q.value.replace(/^\s*/, "").replace(/\s*$/, "");
+
+var invalidatSearchWords=new Array("",DefaultValue,"buscar","search","ask","question","...","ask a question","ask a","a question","enter here..","enter","here..");
+
+for (x in invalidatSearchWords) {
+if (document.getElementById('q').value.toLocaleLowerCase() == invalidatSearchWords[x]) {
+	 
+        alert('Please enter at least one keyword in the Search box.');
+     
+
+	document.getElementById('q').focus();
+	return false;				
+}				
+}    
+
+return true;
+
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="//www.att.com/scripts/foresee_global/foresee-trigger-global.js"></script>
+		
+	<script type="text/javascript">ForeSee.CPPS.fsr$set('ctn','')</script>
+	<script type="text/javascript">ForeSee.CPPS.fsr$set('customer_type','current')</script>
+	
+	
+	
+		
+				
+		
+		
+		
+			
+				
+		
+	
+	
+	
+	
+		<script type="text/javascript">
+			var user_type="N";
+			ForeSee.CPPS.fsr$set('user_type','N');
+		</script>
+	
+	
+
+
+<!-- GLOBAL NAV -->
+
+<div id="globalNav" style="height:150px">
+
+<!--This gives you access to the ATG User Profile-->
+
+
+
+
+<!-- Page Name = [] isGNDisabled true disableGN true-->
+	<div id="globalNavInterface">
+		<div id="segMenuBar"><div id="stub">&nbsp;</div></div>
+		<div id="globalNavUserInfo"></div>
+		
+		
+		<div id="greyNav"> </div>
+		
+		
+	</div>
+	<div id="globalNavShadows"></div>
+</div>
+
+
+<!-- /GLOBAL NAV -->
+
+
+<script type="text/javascript">
+var customGlobalNavResources = {
+        userInfo: "/olam/jsp/tiles/common_includes/globalNav/blank.jsp",
+        segmentationMenu: "/olam/jsp/tiles/common_includes/globalNav/segmentation_menu.jsp",
+        menuJSON: "/olam/jsp/tiles/common_includes/globalNav/blank.jsp"
+};
+
+var globalNavDefaultSelections = {"primary" : "020000"}
+
+
+</script>
+
+		
+		<!--  /GLOBAL NAV-->
+
+	<!--PAGE LEVEL-->
+	<div id="page">
+		
+		
+		<!--SKIP NAV-->
+		<div id="skip">
+			<a href="#content-container">Skip to Main Content</a>
+		</div>
+		<!--/SKIP NAV-->
+		
+		
+		
+		
+ 	    
+		
+			 
+
+		
+		<!--UNIVERSAL NAV-->
+		
+		<div id="universalNav">
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<!--This gives you access to the ATG User Profile-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+jQuery(document).ready(function() {
+	jQuery("a.openModalCart").click(function(){
+	modalURL = jQuery(this).attr('href');
+	jQuery.colorbox({iframe:true, height:350, width:670, scrolling:false, href: modalURL});
+	return false;
+	});
+	jQuery("form.openModalCart").click(function(){
+		modalURL = jQuery(this).attr('action');
+		jQuery.colorbox({iframe:true, height:350, width:800, scrolling:false, href: modalURL});
+		return false;
+		});
+	});
+
+</script>
+
+
+
+
+
+	
+		</div>
+		<!--/UNIVERSAL NAV-->
+        
+         
+        
+        <!--Fingertip Video-->
+		
+    
+    
+    <!--POPUP BG-->
+	<div id="popupBg2">
+		<a href="javascript:void(0)" onclick="showSelects();document.getElementById('page').style.display='block';document.getElementById('popupBg2').style.display='none';document.getElementById('popupFingertip').style.display='none';switchTheVid('movEmbed','movParam','0');" class="close">
+			<img src="/olam/images/shim.gif" alt="" width="100%" height="100%" border="0" />
+		</a>
+	</div>
+	<!--/POPUP BG-->
+	
+	<!--POPUP-->
+	<div id="popupFingertip" class="popupDetails" style="width:490px;">
+
+		<!--POPUP TITLE-->
+		<div style="width:480px;padding:.5em;background-color:#636563;">
+
+			<div class="float-left" style="height:30px;background-color:#636563;">
+				
+			</div>				
+			<!--UTILITY NAV-->
+			<div id="video-container" class="float-right" style="background-color:#636563;padding-top:.2em;">
+				<ul id="video-nav" style="width:200px;">
+					<li class="last">
+						<span><a href="javascript:void(0)" onclick="showSelects();document.getElementById('page').style.display='block';document.getElementById('popupBg2').style.display='none';document.getElementById('popupFingertip').style.display='none';switchTheVid('movEmbed','movParam','0');" style="color:#fff;">Close</a>
+					 		<span style="position:absolute;"><a href="javascript:void(0)" onclick="showSelects();document.getElementById('page').style.display='block';document.getElementById('popupBg2').style.display='none';document.getElementById('popupFingertip').style.display='none';switchTheVid('movEmbed','movParam','0');"><img src="/olam/images/img-closeVidWin.gif" alt="" border="0" /></a>
+					 		</span>
+					 	</span>
+					 </li>
+					<li class="last" style="padding-left:.1em;"></li>
+				</ul>
+			</div>
+
+			<div class="clear"></div>
+			<!--/UTILITY NAV-->
+
+
+			<!--MOVIE-->
+			<div style="background:#636563;" id="moviePopUp"></div>
+			<!--/MOVIE-->
+
+		</div>			
+		<div class="clear"></div>
+		<!--/POPUP DETAILS-->
+
+	</div>
+	<!--/POPUP-->
+
+		<!--/Fingertip Video-->
+        
+        
+		<!--MAIN CONTAINER-->
+		<div id="container">
+
+			
+			
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<script type="text/javascript">
+	reporting.registerSelector("#breadcrumb a", {"wtLinkLoc":"BC"}, function(){return {"wtLinkName":this.getAttribute("name")}});
+</script>
+
+
+	
+
+			
+			
+			
+			
+			
+
+			<!--HEADER-->
+			
+			
+							
+			              
+		      
+
+			<!--/HEADER-->
+
+	        <!-- Timout popup --> 
+			<div id="boxthing" title="This is a pre-warning session timeout message" style="display:none;background-color:yellow;width:719px;align:center;">
+	            <br><br>
+	            <form name="cd">
+	                <center>Your Session is about to time out. To continue, please click&nbsp;<a href="JavaScript:location.reload(true);"><b>here</b></a>.</center>
+	                <center><b>Session Times Out In : </b> <input id="timer2" readonly="true" type="text" value="2:00" style="background-color:yellow;" border="0" name="disp" SIZE="5"></center>
+	            </form>
+	
+	        </div> 
+	         <!-- /Timout popup -->
+         
+			<!--LEFT NAV-->
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<script type="text/javascript">
+
+function viewMap()
+{
+ zipcode = document.viewMap.zipCode.value;
+ url="http://www.wireless.att.com/coverageviewer?zip="+zipcode;
+ window.open(url,"window3","width=650,height=485,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes");
+
+
+}
+</script>
+
+  
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+<div id="left-col">
+	<ul id="left-nav">
+
+			<!--div class="title"><a href="/olam/dashboardAction.olamexecute?reportActionEvent=A_DBD_DASHBOARD_SUB">My Account</a></div-->
+
+			<!--div class="menu"><div><a href="../login/submit.do?event=mybill&ctn=&reportActionEvent=A_PMT_QUICK_PAY_SETUP">Bill &amp; Payments</a></div></div-->
+
+			
+
+		
+
+		
+		
+
+		
+
+
+    
+		
+    
+
+
+
+
+
+
+
+
+	
+		<div class="fade"></div>
+	</ul>
+	
+	
+	
+	
+		
+		  
+	
+</div>
+
+			
+			<!--/LEFT NAV-->
+
+			<!-- CONTENT CONTAINER -->
+			<div id='content-container'>
+				
+			
+
+                         <h1 class="float-left">&nbsp;</h1>
+
+                        
+
+			  
+			  
+			  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+<!--ERRORS DISPLAY-->
+<!--<br></br>-->
+
+<div id="errorDiv">
+
+	
+    
+    
+</div>
+
+
+
+
+
+
+
+
+<!-- end ERRORS DISPLAY-->
+
+
+			  
+
+
+
+
+
+
+<h1>Logging into myAT&amp;T&nbsp;</h1>
+
+			  
+
+				<!--  Primary Content Section -->
+				<div id='primary-content' style=''>
+					<!-- Selection Modules -->				
+					
+					
+					
+					
+					
+										
+					<!-- /Selection Modules -->
+					
+					
+					
+					
+					
+					
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+#greyNav {background:url('/olam/images/brand30/nav/pprls_FauxNAV.png');height:63px;width:983px;margin: auto;position: relative;top:36px;}
+</style>
+<script type="text/javascript" src="/olam/js/flash.js"></script>
+
+	<form name="tGuardLoginForm" action="https://myattwx19.att.com/commonLogin/igate_wam/multiLogin.do" method="post" >
+		   <input type="hidden" name="source" value="MYATT" />
+	       <input type="hidden" name="flow_ind" value="LGN" />
+	       <input type= "hidden" name="vhname" value="www.att.com" />
+	       <input type= "hidden" name="userid" value="" />
+	       <input type= "hidden" name="password" value="" />
+	       
+	</form>
+
+
+
+	<!--POPUP DETAILS-->
+	<div class="msg">
+		<!--GROUP-->
+		<div class="primary-row-seamless" style="text-align:center; border:1px solid #ccc;">
+			<p style="text-align:left;">This may take a few moments, depending on your Internet connection speed.</p>
+			<p class="mandatory"></p>
+			<div style="padding-top:20px">
+				<script type="text/javascript">
+				
+					if (flash.hasVersion(9) ) {	
+						document.write('<div style="text-align:center;">');
+						flash.embedMovie("/olam/English/images/attLoader_001.swf", 400, 230, "#ffffff", 9, '', 'wmode=transparent');
+						document.write('</div>');
+					} else {	
+						document.write('<div style="text-align:center;"><img src="/olam/English/images/attLoader.gif" border="0"></img></div>');
+					}
+				</script>
+				
+				<noscript>
+					<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="400" height="230">
+						<param name="movie" value="/olam/English/images/attLoader_001.swf"/>
+						<param name="quality" value="high"/>
+						<embed src="/olam/English/images/attLoader_001.swf" quality="high" pluginspage="https://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+					</object>
+				</noscript>
+			</div>
+		</div>
+		<!--/GROUP-->
+	</div>
+	<!--/POPUP DETAILS-->
+	
+<script language="javascript">
+window.onload= function()
+{
+//body of function
+	//document.getElementById('popup').style.display='block';
+	document.tGuardLoginForm.submit();
+}
+</script>
+					
+				</div>
+				
+				
+
+
+
+
+
+
+
+
+<div id="secondary-content">
+		
+ 	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+      
+			<!-- BCC Page Name Login -->
+       
+ 
+
+
+
+<!-- accordion AccountLogin/Accordion -->
+	
+   	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+				 
+
+
+
+
+
+
+
+  
+       
+   
+  
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    
+
+    
+
+
+    
+
+		
+        
+        
+
+  
+    
+    
+    
+    
+    
+    
+
+    
+
+
+    
+
+		
+        
+    	<!-- No Result -->
+    
+        
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+      
+			<!-- BCC Page Name Login -->
+       
+ 
+
+
+
+<!-- RHC AccountLogin/RightHandCallouts -->
+	
+   
+   
+   	
+
+
+
+
+		
+
+
+
+
+
+				 
+
+
+
+
+
+
+
+  
+       
+   
+  
+
+
+<!-- CalloutBrand2 AccountLogin/RightHandCallouts -->
+
+	
+
+
+	
+
+
+
+	
+
+
+
+
+
+	
+    
+    
+    
+    
+    
+	
+	
+	
+    	
+    
+	
+    
+	
+  
+	
+    
+    
+    
+    
+    
+	
+	
+	
+    	
+    
+	
+    	<!-- No Result -->
+    
+    
+	
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+    	
+</div>
+
+<div style="clear:both"></div>
+
+				
+				
+			</div>
+			<!--/CONTENT CONTAINER-->
+
+
+                        <div style="clear:both;height:45px"></div>
+
+
+		</div>
+		<!-- /MAIN CONTAINER -->
+
+		<!--FOOTER-->
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+	
+
+	<!-- Begin LP Custom Variables-->
+	<script type="Text/javascript">
+	
+		lpAddVars('session','sessionId','yNn9Pc4XfP79JrTQ7GfkzjD2CyKgd0NHwcfX31Knk31hCH8DyhWH');
+		lpAddVars('session','stack','p1eam1m75');
+		lpAddVars('session','CTN','');
+		lpAddVars('session','AccountOwnerName','');
+		lpAddVars('session','FAN','');
+		lpAddVars('session','upgradeEligibilityFlag','');
+		lpAddVars('page','Section','MyATT');//Pass the section of the site the visitor is currently on
+		lpAddVars('page','Category','');//Pass the secondary navigation category of the site the visitor is currently on
+		lpAddVars('page','PageName','');//Pass the page name for the page visitor is currently on
+		lpAddVars('page','PhoneDevice','');//Pass the phone device name for current account visitor is currently on
+		lpAddVars('page','FeatureConversionStage','');//Pass the pagenames that make up the Feature Conversion Process
+		lpAddVars('page','Feature_OrderTotal','');//Pass the Monthly RMR of the total for features added to the account visitor is currently on
+	
+		
+	</script>
+	<noscript><p>Script section containing code for Liveperson Chat Solution</p></noscript>
+	<!--Immediate Data Submission function-->
+	<!--<input type=button value="Immediate Data Submission" onClick="javascript:lpSendData('<Scope:page/session/visitor>','<Variable Name>','<Variable Value>');">-->
+	<!-- End LP Custom Variables-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+	<!--CALL LOGGER Rel 8.6-->
+	
+	    
+	      
+	
+
+<!--CALL LOGGER Rel 8.6-->
+
+
+
+
+
+<!--FOOTER-->
+	<div id="footer" class="brand3">
+		
+				
+				<p id="preFooter">
+					
+						<a class="" title="AT&amp;T U-verse Offer Details" href="https://uma.att.com/assets/files/legal_disclaimer.html" target="_blank">AT&amp;T U-verse Offer Details</a>
+							|
+					
+						<a class="" title="U-verse Terms of Service" href="https://uma.att.com/general/109-AMSS-X-DMA1-POPUP.html" target="_blank">U-verse Terms of Service</a>
+							|
+					
+						<a class="" title="Contract (Wireless)" href="http://www.att.com/wirelessterms" target="_blank">Contract (Wireless)</a>
+							|
+					
+						<a class="" title="Cell Phone Records Security" href="http://www.wireless.att.com/learn/articles-resources/records-security.jsp" target="_blank">Cell Phone Records Security</a>
+							|
+					
+						<a class="" title="Wireless Legal Site" href="http://www.wireless.att.com/learn/articles-resources/wireless-legal.jsp" target="_blank" target="_blank">Wireless Legal Site</a>
+							
+						
+				</p>
+			
+		
+			
+			<div id="btmContainer" >
+			
+				
+					<div class="left_col">
+						
+					</div>
+				
+				<div class="clear"></div>
+				
+				<div class="right_col">
+						
+							<h6>AT&amp;T on the Web</h6>
+						
+						
+						<div class="attLogos">
+							<span class="dotCom">
+							<a href="http://www.att.com/">
+						 		<img src="//www.att.com/media/att/2011/global/nav/en_US/logoATTdotcom.png" width="133px" height="24px" alt="Shop, Service, Support." />
+						 	</a>
+						 	</span>
+							
+							<span class="dotNet">
+							<a href="http://www.att.net/">
+						  	<img src="//www.att.com/media/att/2011/global/nav/en_US/logoATTdotnet.png" width="173px" height="21px" alt="E-mail - News - Weather &amp; More" /></a>
+						  	</span>
+						</div>
+						
+						<div class="clear"></div>
+						
+						<div class="bottomLinks footerLinks">
+							
+								<a class="begin" title="Privacy Policy" href="http://www.att.com/privacy/" >Privacy Policy</a> | 
+							
+								<a  title="Careers" href="http://www.att.jobs/" >Careers</a> | 
+							
+								<a  title="Contact Us" href="https://www.att.com/econtactus" >Contact Us</a> | 
+							
+								<a  title="Terms of Use" href="http://www.att.com/gen/general?pid=11561" >Terms of Use</a> | 
+							
+								<a  title="Site Map" href="http://www.att.com/sitemap/" >Site Map</a> | 
+							
+								<a  title="Accessibility " href="http://www.att.com/gen/general?pid=10190" >Accessibility </a> | 
+							
+								<a  title="Wireless Emergency Alerts" href="http://www.att.com/gen/public-affairs?pid=20107" >Wireless Emergency Alerts</a> | 
+							
+								<a  title="Advertising Choices" href="http://www.att.com/internal/adchoices" >Advertising Choices</a> | 
+							
+								<a  title="Broadband Information" href="http://www.att.com/internal/broadbandinfo" class="end">Broadband Information</a>  
+																	
+						</div>
+				
+						<div class="clear"></div>
+						<div class="copyright CrMsg"> 
+								<a href="http://www.att.com/gen/privacy-policy?pid=2587">&copy;2012 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
+						</div>
+						
+						<div class="logoBlock imgStyles">
+							
+								<a href="http://www.ctia.org/" target="_blank" target="_blank">
+									<img  src="//www.att.com/media/att/2011/global/nav/en_US/logoCTIA.png" alt="The first nationwide carrier to be awarded the Seal of Wireless Quality. For details, visit www.ctia.org." title="The first nationwide carrier to be awarded the Seal of Wireless Quality. For details, visit www.ctia.org." width="78px" height="100px"/>
+								</a>	
+							
+								<a href="https://www.bbb.org/online/consumer/cks.aspx?id=110020911221" target="_blank" target="_blank">
+									<img  src="//www.att.com/media/att/2011/global/nav/en_US/logoBBB.png" alt="Click to verify BBB accreditation and to see a BBB report." title="Click to verify BBB accreditation and to see a BBB report." />
+								</a>	
+							
+								<a href="http://clicktoverify.truste.com/pvr.php?page=validate&companyName=AT%26T&sealid=101" target="_blank" target="_blank">
+									<img  src="//www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png" alt="This site is certified by TRUSTe" title="This site is certified by TRUSTe" />
+								</a>	
+							
+								<a href="http://www.yellowpages.com/" target="_blank" target="_blank">
+									<img  src="//www.att.com/media/att/2011/global/nav/en_US/logoYP.png" alt="YELLOWPAGES.COM" title="YELLOWPAGES.COM" />
+								</a>	
+							
+								<a href="http://www.realpageslive.com/" target="_blank" target="_blank">
+									<img  src="//www.att.com/media/att/2011/global/nav/en_US/logoDigitalWhiteYellowPages.png" alt="Digital White and Yellow Pages" title="Digital White and Yellow Pages" />
+								</a>	
+							
+								<a href="http://www.att.net/teamusa" target="_blank" target="_blank">
+									<img  src="//www.att.com/media/att/2011/global/nav/en_US/logoOlympics.png" alt="USA Proud Sponsor of the U.S. Olympic Team" title="USA Proud Sponsor of the U.S. Olympic Team" />
+								</a>	
+							
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+	</div>
+	<!--/FOOTER-->
+
+<!-- WebTrends Base Tag : include only at end of page -->
+
+
+	<script>
+	   // the below block of code is very important; it clears all the prototype
+	   // javascript functions that otherwise get added as webtrends query paramaters
+		if (window.webTrendTag_unprototype) webTrendTag_unprototype();
+	</script>
+<script src="//www.att.com/webtrends/scripts/dcs_tag.js" type="text/javascript"></script>
+	
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+	var VirtuOzVars = {"bi":{"ap":"p1eam1m75","it":"User","sc":"OLAM","si":"yNn9Pc4XfP79JrTQ7GfkzjD2CyKgd0NHwcfX31Knk31hCH8DyhWH!1532366756!1327266007964","se":"AccountLogin"},"ui":{"as":"1","uw":"1","wii":"1","wi":"1","ui":"1"}};
+</script>
+<!--  VirtuOzLoader.js file included for RD2113 - Virtual Expert - 1104-->
+<script type="text/javascript" src="/olam/virtuOz/scripts/VirtuOzLoader.js"></script>
+
+<script type="text/javascript">  
+	function getCookie(c_name){ 
+		if (document.cookie.length>0){ 
+			c_start=document.cookie.indexOf(c_name + "="); 
+			if (c_start!=-1) { 
+				c_start=c_start + c_name.length+1; 
+				c_end=document.cookie.indexOf(";",c_start); 
+				if (c_end==-1){ 
+					c_end=document.cookie.length;
+				} 
+				return unescape(document.cookie.substring(c_start,c_end)); 
+			} 
+		} 
+		return ""; 
+	}  
+	function updateVESessionCookie(){  
+		var veCookieName = "VirtuOz-attve-session"; 
+		var chatCookieName = "VirtuOz-attchat-session"; 
+		var path="/"; 
+		var domain=".att.com"; 
+		var secure=false;   
+
+		var veCookieVal = getCookie(veCookieName); 
+		var chatCookieVal = getCookie(chatCookieName);   
+
+		if((veCookieVal != undefined) && (veCookieVal.length > 0)){
+			veCookieVal = decodeURIComponent(veCookieVal); 
+			veCookieVal = veCookieVal.replace(/@[^@"]+@[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}/g,""); 
+			veCookieVal = encodeURIComponent(veCookieVal); 
+			setVESessionCookie(veCookieName,veCookieVal,path,domain,secure);
+		}  
+
+		if((chatCookieVal != undefined) && (chatCookieVal.length > 0)){
+			chatCookieVal = decodeURIComponent(chatCookieVal); 
+			chatCookieVal = chatCookieVal.replace(/@[^@"]+@[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}/g,""); 
+			chatCookieVal = encodeURIComponent(chatCookieVal);
+			setVESessionCookie(chatCookieName,chatCookieVal,path,domain,secure);
+		}	 
+	} 
+
+	function getTopLevelDomain(domain){
+		var domainVars = domain.split("\.");
+		var topLevelDomainLast = domainVars.pop();
+		var topLevelDomainFirst = domainVars.pop();
+
+		return "." + topLevelDomainFirst + "." + topLevelDomainLast;
+	}
+	 
+	function setVESessionCookie(name, value, path, domain, secure) {
+
+		var curCookie = name + "=" + value  
+		+ ((path) ? "; path=" + path : "") 
+		+ ((domain) ? "; domain=" + getTopLevelDomain(domain) : "") 
+		+ ((secure) ? "; secure" : "");
+
+		document.cookie = curCookie; 
+	}
+	</script>
+
+
+	<!-- Send NRT and CSR Report Events by AJAX -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+		
+		<!--/FOOTER-->
+
+	</div>
+	<!--/PAGE LEVEL-->
+
+	
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="/olam/css/divPopupContract.css" media="screen" charset="utf-8" />
+	<script type="text/javascript" src="/olam/js/divPopupContract.js"></script>
+	<div id="popupContractBg" style="display:none;">
+		<a href="javascript:void(0);">
+			<img src="images/shim.gif" alt="" width="100%" height="100%" border="0"/>
+		</a>
+	</div>
+		
+	<div id="popupContract" class="popupDetails" style="top:50%;left:50%;">
+		<div id="beforeTimeout">
+			<div class="popupGlobal-titleContainer">
+				<h1>
+					Inactivity Timeout
+				</h1>
+				<a href="javaScript:extendSeverSessionTime();">
+					Close
+				</a>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="msg">
+				<div class="pad border bottomMargin10px">
+					If there's no further activity in
+					<b id="sessionTimer"></b>, you will be taken to the login screen and will need to restart this activity.
+					<br /> <br />
+					If you are still managing your account, select OK to continue.
+				</div>
+				<div class="float-right">
+					<a href="javaScript:extendSeverSessionTime();" id="modalOkButton">
+						<img alt="Ok" src="/olam/English/images/bt/bt_ok.gif">
+					</a>
+				</div>
+				<div class="clear">
+				</div>	
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+		<div id="afterTimeout" style="display:none">
+			<div class="popupGlobal-titleContainer">
+				<h1>
+					Inactivity Timeout
+				</h1>
+				<a href="javaScript:location.href='/olam/loginAction.olamexecute';" >
+					Close
+				</a>
+			</div>
+			<div class="clear">
+			</div>
+			<div class="msg">
+				<div class="pad border bottomMargin10px">
+					Your activity has timed out. Select OK to return to the login screen.
+				</div>
+				<div class="float-right">
+					<a href="javaScript:location.href='/olam/loginAction.olamexecute';">
+						<img alt="Ok" src="/olam/English/images/bt/bt_ok.gif">
+					</a>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+	</div>
+
+	
+	<!--[if lte IE 6]></div><![endif]--> 
+<!--[if lte IE 8]></div><![endif]-->
+
+</body>
+</html>
+

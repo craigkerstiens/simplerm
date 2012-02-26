@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+import gmail
 
 MEDIUM_CHOICES = (
     (1, u'Email'),
@@ -69,7 +70,7 @@ from social_auth.backends.google import GoogleOAuth2Backend
 def google_extra_values(sender, user, response, details, **kwargs):
     #print sender
     #print user
-    print response['id_token']
+    gmail.get_messages('imap.googlemail.com', response['id_token'])
     #print details
     return True
     

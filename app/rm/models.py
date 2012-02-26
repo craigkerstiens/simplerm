@@ -68,6 +68,9 @@ from social_auth.backends.google import GoogleBackend
 
 def google_extra_values(sender, user, response, details, **kwargs):
     print sender
+    print user
+    print response
+    print details
     return True
     
 from social_auth.signals import pre_update

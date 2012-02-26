@@ -160,7 +160,9 @@ LINKEDIN_CONSUMER_SECRET = os.environ.get('LINKEDIN_CONSUMER_SECRET')
 
 GOOGLE_OAUTH2_CLIENT_ID = os.environ.get('GOOGLE_OAUTH2_CLIENT_ID')
 GOOGLE_OAUTH2_CLIENT_SECRET = os.environ.get('GOOGLE_OAUTH2_CLIENT_SECRET')
-GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds','https://www.googleapis.com/userinfo/email']
+#GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds','https://www.googleapis.com/userinfo/email']
+GOOGLE_OAUTH_EXTRA_SCOPE = ['https://www.google.com/m8/feeds']
+
 
 CELERY_ALWAYS_EAGER = True
 SOCIAL_AUTH_ASSOCIATE_BY_MAIL = True

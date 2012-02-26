@@ -67,10 +67,10 @@ from social_auth.signals import pre_update
 from social_auth.backends.google import GoogleOAuth2Backend
 
 def google_extra_values(sender, user, response, details, **kwargs):
-    print sender
-    print user
-    print response
-    print details
+    #print sender
+    #print user
+    print response['id_token']
+    #print details
     return True
     
 from social_auth.signals import pre_update

@@ -32,6 +32,7 @@
 				{% if user.is_authenticated %}
 	      		<a href="/logout/">Logout</a>
 				{% else %}
+	      		<a href="/accounts/profile/" >My Profile</a> | 
 	      		<a href="#" id="login" data-reveal-id="myModal">Login</a>
 				{% endif %}
 				{% endifswitch %}

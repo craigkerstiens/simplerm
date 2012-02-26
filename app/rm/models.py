@@ -64,7 +64,7 @@ class UserProfile(models.Model):
     
 		
 from social_auth.signals import pre_update
-from social_auth.backends.google import GoogleBackend
+from social_auth.backends.google import GoogleOAuth2Backend
 
 def google_extra_values(sender, user, response, details, **kwargs):
     print sender
@@ -83,4 +83,4 @@ def facebook_extra_values(sender, user, response, details, **kwargs):
     return True
 
 pre_update.connect(facebook_extra_values, sender=FacebookBackend)
-pre_update.connect(google_extra_values, sender=GoogleBackend)
+pre_update.connect(google_extra_values, sender=GoogleOAuth2Backend)
